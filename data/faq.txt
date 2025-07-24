@@ -1,0 +1,8 @@
+Question: What are your shipping times?
+Answer: We offer standard shipping (5-7 business days) and express shipping (1-2 business days).
+
+Question: What is your return policy?
+Answer: You can return any item within 30 days of purchase for a full refund. The item must be in its original condition.
+
+Question: Do you ship internationally?
+Answer: Yes, we ship to most countries. International shipping rates and times vary. Please check at checkout.
