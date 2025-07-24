@@ -1,3 +1,4 @@
+import requests
 import os
 import pandas as pd
 from crewai import Agent, Task, Crew, Process
@@ -44,6 +45,23 @@ def search_faq(query: str) -> str:
         return "\n\n".join(relevant_sections)
     return "I couldn't find an answer to that in the FAQ."
 
+@tool("Order Status Tool")
+def check_order_status(order_id: str) -> str:
+    """
+    Checks the status of a specific order by its ID. Use this tool when a user asks for their order status.
+    """
+    # The URL of our running mock_api.py server
+    api_url = f"http://127.0.0.1:5000/order_status/{order_id}"
+    print(f"--- Contacting API at: {api_url} ---") # A small debug print
+    try:
+        response = requests.get(api_url)
+        # Check if the API returned a successful response
+        if response.status_code == 200:
+            return f"Status for order {order_id}: {response.json()}"
+        else:
+            return f"Could not find order with ID {order_id}. Please double-check the ID."
+    except requests.exceptions.ConnectionError:
+        return "The order status service is currently unavailable. Please try again later."
 
 # --- 3. CREATE AGENT ---
 support_agent = Agent(
@@ -55,10 +73,11 @@ support_agent = Agent(
         "You are known for your patience, clarity, and wit. "
         "You always strive to provide the best possible customer experience."
     ),
-    tools=[search_products, search_faq],
+    tools=[search_products, search_faq, check_order_status],
     llm=llm,
     allow_delegation=False,
     verbose=True
+    memory=True
 )
 
 # --- 4. DEFINE THE TASK ---
