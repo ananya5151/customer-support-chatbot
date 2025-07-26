@@ -2,8 +2,6 @@
 
 import streamlit as st
 import os
-import pandas as pd
-import requests
 import json
 from crewai import Agent, Task, Crew, Process
 from crewai_tools import tool
@@ -11,9 +9,9 @@ from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
 # --- PAGE CONFIGURATION ---
-st.set_page_config(page_title="E-Commerce Support Chat", page_icon="🛍️")
+st.set_page_config(page_title="MEN-KID-WOMEN Support", page_icon="🛍️")
 
-# --- HELPER FUNCTION TO CREATE THE CREW ---
+# --- HELPER FUNCTION TO CREATE THE CREW (CACHED FOR PERFORMANCE) ---
 @st.cache_resource
 def create_chatbot_crew():
     """
@@ -22,56 +20,67 @@ def create_chatbot_crew():
     """
     load_dotenv()
 
-    # Define the strict operational guidelines for the agent
-    guidelines = """You are a highly-trained AI Support Specialist. Your primary goal is to assist users by accessing internal company data using the tools you've been given. You are professional, concise, and adhere strictly to your operational guidelines.
-
-    **Operational Guidelines:**
-    - **NEVER** make up answers or provide information that does not come directly from a tool's output. Your knowledge is limited to your tools.
-    - If a tool returns no information, you must state that you could not find the information.
-    - If a user query is ambiguous, vague, or missing information (e.g., "I need help", "the price is wrong"), you MUST ask a clarifying question to get the information you need. To do this, you will conclude your work by providing your question as the 'Final Answer'.
-    - If a user query is off-topic or outside your scope (e.g., "tell me a joke," "what's the weather"), you MUST conclude your work with the 'Final Answer:' using the exact phrase: "I'm sorry, I can only assist with questions related to our products, store policies, and order statuses."
-    """
-
-    # --- LLM SETUP (Using Groq) ---
+    # --- LLM SETUP ---
     llm = ChatGroq(
         model="llama3-8b-8192",
         verbose=True,
-        temperature=0.1,
+        temperature=0.2,
         groq_api_key=os.getenv("GROQ_API_KEY")
     )
+    
+    # --- LOAD KNOWLEDGE BASE ---
+    product_data = []
+    with open('data/products.jsonl', 'r') as f:
+        for line in f:
+            product_data.append(json.loads(line))
+    
+    faq_data = []
+    with open('data/faq.jsonl', 'r') as f:
+        for line in f:
+            faq_data.append(json.loads(line))
 
     # --- TOOLS DEFINITION ---
-    product_df = pd.read_csv('data/products.csv')
+    @tool("Store Information Search Tool")
+    def search_store_knowledge(query: str) -> str:
+        """
+        Searches the MEN-KID-WOMEN store's product catalog and FAQ database.
+        This is the only tool and should be used for every query.
+        """
+        query_lower = query.lower()
 
-    @tool("Product Search Tool")
-    def search_products(query: str) -> str:
-        """Searches the product database for a given query to find information like price and stock."""
-        name_matches = product_df['product_name'].str.contains(query, case=False)
-        category_matches = product_df['category'].str.contains(query, case=False)
-        results = product_df[name_matches | category_matches]
-        if not results.empty:
-            return json.dumps(results.to_dict(orient='records'))
-        return "No products found matching that description."
+        # Intelligent Ambiguity Check
+        ambiguous_terms = ['jeans', 'shirt', 't-shirt', 'trousers', 'shoes', 'jacket']
+        genders_in_query = any(g in query_lower for g in ['men', 'woman', 'women', 'kid', 'kids', 'boy', 'girl'])
+        
+        for term in ambiguous_terms:
+            if term == query_lower and not genders_in_query:
+                return f"CLARIFICATION_NEEDED: Of course! Are you looking for {term} for men, women, or kids?"
+        
+        # Search FAQs first
+        faq_results = [qa for qa in faq_data if query_lower in qa['question'].lower()]
+        if faq_results:
+            return json.dumps(faq_results)
 
-    @tool("FAQ Search Tool")
-    def search_faq(query: str) -> str:
-        """Searches the FAQ file for answers to common questions about company policies like shipping and returns."""
-        with open('data/faq.txt', 'r') as f:
-            faq_content = f.read()
-        relevant_sections = []
-        for section in faq_content.split('\n\n'):
-            if query.lower() in section.lower():
-                relevant_sections.append(section)
-        if relevant_sections:
-            return "\n\n".join(relevant_sections)
-        return "I couldn't find an answer to that in the FAQ."
+        # Then search products
+        product_results = []
+        for item in product_data:
+            if (query_lower in item['name'].lower() or
+                query_lower in item['category'].lower() or
+                (item.get('gender') and query_lower in item['gender'].lower()) or
+                query_lower in item['style'].lower()):
+                product_results.append(item)
+        
+        if not product_results:
+            return "I'm sorry, I couldn't find any information about that in our store's catalog or FAQ."
+            
+        return json.dumps(product_results[:5])
 
     # --- AGENT DEFINITION ---
-    support_agent = Agent(
-        role="E-Commerce Support Specialist",
-        goal="Provide accurate, tool-based support to users. Follow your operational guidelines precisely.",
-        backstory=guidelines,
-        tools=[search_products, search_faq], # IMPORTANT: Order Status tool is removed for deployment
+    store_expert = Agent(
+        role="Efficient Store Data Retriever",
+        goal="For every user query, use your search tool once and only once. Then, based on the tool's output, provide a final answer.",
+        backstory="""You are a simple but powerful AI assistant for 'MEN-KID-WOMEN'. Your only job is to take a user's question, use your single search tool, and report the result. If the tool gives you a question to ask (prefixed with 'CLARIFICATION_NEEDED:'), your final answer is that exact question. Otherwise, your final answer is a summary of the data the tool returned. You must be decisive and never use the tool more than once per query.""",
+        tools=[search_store_knowledge],
         llm=llm,
         allow_delegation=False,
         verbose=True,
@@ -80,16 +89,14 @@ def create_chatbot_crew():
 
     # --- TASK DEFINITION ---
     support_task = Task(
-        description=f"""Analyze the user's query and provide a helpful response.
-        **User Query:** {{query}}
-        **Your Operational Guidelines:**\n{guidelines}""",
-        expected_output="A helpful and accurate answer, a clarifying question, or a polite refusal based on your operational guidelines.",
-        agent=support_agent
+        description="Answer the user's query using your search tool, following your strict operational procedure. The user's query is: {query}",
+        expected_output="A helpful and accurate answer based on the single output from your tool.",
+        agent=store_expert
     )
 
     # --- CREW DEFINITION ---
     crew = Crew(
-        agents=[support_agent],
+        agents=[store_expert],
         tasks=[support_task],
         process=Process.sequential,
         verbose=2
@@ -97,14 +104,12 @@ def create_chatbot_crew():
     return crew
 
 # --- MAIN APP LOGIC ---
-st.title("🛍️ E-Commerce Customer Support")
-st.write("Welcome! I can help you with product questions and our store policies. How can I assist you today?")
+st.title("🛍️ MEN-KID-WOMEN Customer Support")
+st.write("Welcome! I am an expert on our store's products and policies. How can I assist you today?")
 
-# Get the cached crew
 try:
     crew = create_chatbot_crew()
 
-    # --- CHAT HISTORY MANAGEMENT ---
     if "messages" not in st.session_state:
         st.session_state.messages = []
 
@@ -112,8 +117,7 @@ try:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    # --- USER INPUT HANDLING ---
-    if prompt := st.chat_input("Ask your question here..."):
+    if prompt := st.chat_input("Ask about our products or policies..."):
         st.session_state.messages.append({"role": "user", "content": prompt})
         with st.chat_message("user"):
             st.markdown(prompt)
@@ -121,6 +125,8 @@ try:
         with st.chat_message("assistant"):
             with st.spinner("Thinking..."):
                 result = crew.kickoff(inputs={'query': prompt})
+                if "CLARIFICATION_NEEDED:" in result:
+                    result = result.replace("CLARIFICATION_NEEDED:", "").strip()
                 st.markdown(result)
         
         st.session_state.messages.append({"role": "assistant", "content": result})

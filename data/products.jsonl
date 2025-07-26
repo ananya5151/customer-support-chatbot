@@ -1,0 +1,125 @@
+{"id": "M001", "name": "Men's Classic Blue Jeans", "category": "bottom_wear", "gender": "men", "style": "Straight Fit", "price": 3500, "stock": 150, "details": "Made with 100% durable denim."}
+{"id": "M002", "name": "Men's Cargo Trousers", "category": "bottom_wear", "gender": "men", "style": "Utility Fit", "price": 2800, "stock": 80, "details": "Features multiple pockets for practicality."}
+{"id": "M003", "name": "Men's Linen Shirt", "category": "top_wear", "gender": "men", "style": "Casual", "price": 2200, "stock": 120, "details": "Lightweight and breathable, perfect for Indian summers."}
+{"id": "M004", "name": "Men's Graphic Print T-Shirt", "category": "top_wear", "gender": "men", "style": "Streetwear", "price": 1500, "stock": 250, "details": "Bold front graphic on soft cotton."}
+{"id": "M005", "name": "Men's Formal Trousers", "category": "bottom_wear", "gender": "men", "style": "Slim Fit", "price": 3200, "stock": 90, "details": "Elegant trousers for office or formal events."}
+{"id": "M006", "name": "Men's Polo T-Shirt", "category": "top_wear", "gender": "men", "style": "Smart Casual", "price": 1800, "stock": 300, "details": "Classic polo design in pique cotton."}
+{"id": "M007", "name": "Men's Denim Jacket", "category": "outerwear", "gender": "men", "style": "Classic", "price": 4500, "stock": 75, "details": "A versatile jacket for any season."}
+{"id": "M008", "name": "Men's Chino Shorts", "category": "bottom_wear", "gender": "men", "style": "Casual", "price": 1900, "stock": 180, "details": "Comfortable and stylish for warm weather."}
+{"id": "M009", "name": "Men's Kurta", "category": "ethnic_wear", "gender": "men", "style": "Traditional", "price": 2500, "stock": 110, "details": "Silk-blend kurta for festive occasions."}
+{"id": "M010", "name": "Men's Leather Belt", "category": "accessories", "gender": "men", "style": "Formal", "price": 1200, "stock": 400, "details": "Genuine leather with a classic buckle."}
+{"id": "M011", "name": "Men's Running Shoes", "category": "footwear", "gender": "men", "style": "Athletic", "price": 5500, "stock": 130, "details": "Lightweight with cushioned soles for running."}
+{"id": "M012", "name": "Men's Hoodie", "category": "outerwear", "gender": "men", "style": "Casual", "price": 3000, "stock": 200, "details": "Fleece-lined for extra warmth."}
+{"id": "M013", "name": "Men's Sunglasses", "category": "accessories", "gender": "men", "style": "Aviator", "price": 2000, "stock": 350, "details": "UV400 protection with a classic aviator frame."}
+{"id": "M014", "name": "Men's Formal Shirt", "category": "top_wear", "gender": "men", "style": "Formal", "price": 2100, "stock": 220, "details": "Crisp cotton formal shirt."}
+{"id": "M015", "name": "Men's Nehru Jacket", "category": "ethnic_wear", "gender": "men", "style": "Ethnic", "price": 3800, "stock": 85, "details": "Wear over a kurta for a layered ethnic look."}
+{"id": "M016", "name": "Men's Loafers", "category": "footwear", "gender": "men", "style": "Casual", "price": 3500, "stock": 150, "details": "Suede loafers for a relaxed yet smart look."}
+{"id": "M017", "name": "Men's Beanie Cap", "category": "accessories", "gender": "men", "style": "Winter", "price": 800, "stock": 500, "details": "Warm woolen beanie for cold days."}
+{"id": "M018", "name": "Men's Track Pants", "category": "bottom_wear", "gender": "men", "style": "Activewear", "price": 2300, "stock": 280, "details": "Moisture-wicking fabric for workouts."}
+{"id": "M019", "name": "Men's V-Neck T-Shirt", "category": "top_wear", "gender": "men", "style": "Basic", "price": 900, "stock": 600, "details": "A versatile wardrobe staple."}
+{"id": "M020", "name": "Men's Bomber Jacket", "category": "outerwear", "gender": "men", "style": "Trendy", "price": 4800, "stock": 65, "details": "Stylish bomber jacket with satin finish."}
+{"id": "M021", "name": "Men's Boxers (Pack of 3)", "category": "innerwear", "gender": "men", "style": "Basic", "price": 1200, "stock": 700, "details": "Comfortable cotton boxer shorts."}
+{"id": "M022", "name": "Men's Sandals", "category": "footwear", "gender": "men", "style": "Open-toe", "price": 1600, "stock": 300, "details": "Durable sandals with comfortable straps."}
+{"id": "M023", "name": "Men's Wallet", "category": "accessories", "gender": "men", "style": "Classic", "price": 1500, "stock": 450, "details": "Slim leather wallet with multiple card slots."}
+{"id": "M024", "name": "Men's Sherwani", "category": "ethnic_wear", "gender": "men", "style": "Wedding", "price": 15000, "stock": 40, "details": "Embroidered sherwani for special occasions."}
+{"id": "M025", "name": "Men's Crew Neck Sweater", "category": "top_wear", "gender": "men", "style": "Winter", "price": 2800, "stock": 180, "details": "Soft wool-blend sweater."}
+{"id": "W001", "name": "Women's Floral Maxi Dress", "category": "dresses", "gender": "women", "style": "Summer Wear", "price": 4200, "stock": 60, "details": "A beautiful flowing dress with a vibrant floral pattern."}
+{"id": "W002", "name": "Women's Flared Jeans", "category": "jeans", "gender": "women", "style": "High-Waist", "price": 3800, "stock": 90, "details": "Retro-style flared jeans with a modern high-waist fit."}
+{"id": "W003", "name": "Women's Silk Saree", "category": "ethnic_wear", "gender": "women", "style": "Traditional", "price": 8000, "stock": 50, "details": "Pure Banarasi silk saree with intricate zari work."}
+{"id": "W004", "name": "Women's Crop Top", "category": "top_wear", "gender": "women", "style": "Trendy", "price": 1200, "stock": 350, "details": "Stylish crop top to pair with high-waist jeans."}
+{"id": "W005", "name": "Women's Skinny Fit Jeans", "category": "jeans", "gender": "women", "style": "Modern", "price": 3200, "stock": 200, "details": "Stretchable denim for a perfect fit."}
+{"id": "W006", "name": "Women's Handbag", "category": "accessories", "gender": "women", "style": "Tote", "price": 3500, "stock": 150, "details": "Spacious tote bag for daily essentials."}
+{"id": "W007", "name": "Women's Anarkali Suit", "category": "ethnic_wear", "gender": "women", "style": "Festive", "price": 6500, "stock": 80, "details": "Floor-length Anarkali with dupatta."}
+{"id": "W008", "name": "Women's Pencil Skirt", "category": "bottom_wear", "gender": "women", "style": "Formal", "price": 2500, "stock": 120, "details": "Knee-length skirt for a professional look."}
+{"id": "W009", "name": "Women's Stilettos", "category": "footwear", "gender": "women", "style": "Party", "price": 4000, "stock": 100, "details": "Classic black stilettos with a 4-inch heel."}
+{"id": "W010", "name": "Women's Blouse", "category": "top_wear", "gender": "women", "style": "Elegant", "price": 1800, "stock": 250, "details": "Satin blouse with bishop sleeves."}
+{"id": "W011", "name": "Women's Jeggings", "category": "bottom_wear", "gender": "women", "style": "Comfort", "price": 1600, "stock": 400, "details": "The comfort of leggings with the look of jeans."}
+{"id": "W012", "name": "Women's Scarf", "category": "accessories", "gender": "women", "style": "Printed", "price": 900, "stock": 500, "details": "Lightweight printed scarf to accessorize any outfit."}
+{"id": "W013", "name": "Women's A-Line Dress", "category": "dresses", "gender": "women", "style": "Casual", "price": 2800, "stock": 180, "details": "Simple and elegant A-line cotton dress."}
+{"id": "W014", "name": "Women's Flats", "category": "footwear", "gender": "women", "style": "Casual", "price": 2200, "stock": 300, "details": "Comfortable ballet flats for everyday wear."}
+{"id": "W015", "name": "Women's Lehenga Choli", "category": "ethnic_wear", "gender": "women", "style": "Wedding", "price": 18000, "stock": 30, "details": "Designer lehenga choli with heavy embroidery."}
+{"id": "W016", "name": "Women's Cardigan", "category": "outerwear", "gender": "women", "style": "Winter", "price": 3000, "stock": 160, "details": "Long woolen cardigan with pockets."}
+{"id": "W017", "name": "Women's Tunic", "category": "top_wear", "gender": "women", "style": "Indo-Western", "price": 2300, "stock": 220, "details": "Can be paired with leggings or jeans."}
+{"id": "W018", "name": "Women's Palazzo Pants", "category": "bottom_wear", "gender": "women", "style": "Bohemian", "price": 2000, "stock": 280, "details": "Wide-legged and comfortable rayon palazzos."}
+{"id": "W019", "name": "Women's Earrings", "category": "accessories", "gender": "women", "style": "Jhumka", "price": 1500, "stock": 450, "details": "Traditional silver-plated jhumka earrings."}
+{"id": "W020", "name": "Women's Sports Bra", "category": "activewear", "gender": "women", "style": "High-Impact", "price": 1800, "stock": 320, "details": "Provides excellent support during workouts."}
+{"id": "W021", "name": "Women's Trench Coat", "category": "outerwear", "gender": "women", "style": "Classic", "price": 7500, "stock": 55, "details": "A timeless trench coat for a chic look."}
+{"id": "W022", "name": "Women's Kurti", "category": "ethnic_wear", "gender": "women", "style": "Casual", "price": 1500, "stock": 500, "details": "Simple cotton kurti for daily wear."}
+{"id": "W023", "name": "Women's Wedges", "category": "footwear", "gender": "women", "style": "Smart Casual", "price": 3200, "stock": 140, "details": "Comfortable wedge heels for all-day wear."}
+{"id": "W024", "name": "Women's Boyfriend Jeans", "category": "jeans", "gender": "women", "style": "Relaxed Fit", "price": 3600, "stock": 110, "details": "Comfortable and stylish relaxed fit jeans."}
+{"id": "W025", "name": "Women's Clutch", "category": "accessories", "gender": "women", "style": "Evening", "price": 2800, "stock": 180, "details": "Embellished clutch for parties and events."}
+{"id": "K001", "name": "Kids' Dinosaur Graphic T-Shirt", "category": "t_shirts", "gender": "kids", "style": "Playful", "price": 999, "stock": 200, "details": "Fun and comfortable t-shirt for everyday adventures."}
+{"id": "K002", "name": "Kids' Denim Shorts", "category": "bottom_wear", "gender": "kids", "style": "Casual", "price": 1200, "stock": 300, "details": "Durable and stylish shorts for playtime."}
+{"id": "K003", "name": "Kids' Party Dress", "category": "dresses", "gender": "girls", "style": "Party", "price": 2500, "stock": 100, "details": "Sequined dress for special occasions."}
+{"id": "K004", "name": "Kids' Hoodie", "category": "outerwear", "gender": "kids", "style": "Casual", "price": 1800, "stock": 250, "details": "Warm and cozy with a fun cartoon print."}
+{"id": "K005", "name": "Kids' LED Sneakers", "category": "footwear", "gender": "kids", "style": "Fun", "price": 2200, "stock": 150, "details": "Sneakers with lights in the sole that flash with every step."}
+{"id": "K006", "name": "Kids' Pajama Set", "category": "nightwear", "gender": "kids", "style": "Comfort", "price": 1500, "stock": 400, "details": "Soft cotton pajama set with superhero print."}
+{"id": "K007", "name": "Kids' Ethnic Wear Set", "category": "ethnic_wear", "gender": "boys", "style": "Festive", "price": 2000, "stock": 120, "details": "Small kurta pajama set for festivals."}
+{"id": "K008", "name": "Kids' Raincoat", "category": "outerwear", "gender": "kids", "style": "Practical", "price": 1300, "stock": 300, "details": "Waterproof raincoat with a hood and vibrant colors."}
+{"id": "K009", "name": "Kids' Backpack", "category": "accessories", "gender": "kids", "style": "School", "price": 1600, "stock": 350, "details": "Spacious school backpack with multiple compartments."}
+{"id": "K010", "name": "Kids' Leggings (Pack of 2)", "category": "bottom_wear", "gender": "girls", "style": "Basic", "price": 1000, "stock": 500, "details": "Stretchable and comfortable leggings in solid colors."}
+{"id": "K011", "name": "Kids' Sun Hat", "category": "accessories", "gender": "kids", "style": "Summer", "price": 600, "stock": 600, "details": "Wide-brimmed hat for sun protection."}
+{"id": "K012", "name": "Kids' Jeans", "category": "bottom_wear", "gender": "kids", "style": "Durable", "price": 1800, "stock": 280, "details": "Sturdy jeans with an adjustable waistband."}
+{"id": "K013", "name": "Kids' Sweater", "category": "top_wear", "gender": "kids", "style": "Winter", "price": 1700, "stock": 220, "details": "Knitted sweater with a cute animal design."}
+{"id": "K014", "name": "Kids' Crocs", "category": "footwear", "gender": "kids", "style": "Comfort", "price": 1500, "stock": 400, "details": "Lightweight and easy-to-clean clogs."}
+{"id": "K015", "name": "Kids' Dungarees", "category": "sets", "gender": "kids", "style": "Playful", "price": 2200, "stock": 180, "details": "Denim dungarees with a matching t-shirt."}
+{"id": "M026", "name": "Men's Slim Fit Chinos", "category": "bottom_wear", "gender": "men", "style": "Smart Casual", "price": 2600, "stock": 170, "details": "Versatile chinos in a modern slim fit."}
+{"id": "M027", "name": "Men's Henley T-Shirt", "category": "top_wear", "gender": "men", "style": "Casual", "price": 1300, "stock": 320, "details": "Long-sleeved t-shirt with a buttoned placket."}
+{"id": "M028", "name": "Men's Leather Jacket", "category": "outerwear", "gender": "men", "style": "Biker", "price": 8500, "stock": 50, "details": "Genuine sheepskin leather biker jacket."}
+{"id": "M029", "name": "Men's Jodhpuri Pants", "category": "ethnic_wear", "gender": "men", "style": "Royal", "price": 3500, "stock": 70, "details": "Tapered trousers for a regal ethnic look."}
+{"id": "M030", "name": "Men's Sports Watch", "category": "accessories", "gender": "men", "style": "Digital", "price": 4000, "stock": 100, "details": "Water-resistant digital watch with multiple functions."}
+{"id": "W026", "name": "Women's Jumpsuit", "category": "dresses", "gender": "women", "style": "Chic", "price": 4500, "stock": 80, "details": "Elegant one-piece jumpsuit for evening wear."}
+{"id": "W027", "name": "Women's Mom Jeans", "category": "jeans", "gender": "women", "style": "Vintage", "price": 3700, "stock": 130, "details": "High-waisted, relaxed fit jeans for a vintage look."}
+{"id": "W028", "name": "Women's Sharara Suit", "category": "ethnic_wear", "gender": "women", "style": "Festive", "price": 7200, "stock": 60, "details": "Flared sharara pants with a short kurti."}
+{"id": "W029", "name": "Women's Off-Shoulder Top", "category": "top_wear", "gender": "women", "style": "Trendy", "price": 1600, "stock": 280, "details": "Stylish and breezy off-shoulder top."}
+{"id": "W030", "name": "Women's Platform Heels", "category": "footwear", "gender": "women", "style": "Bold", "price": 3800, "stock": 110, "details": "Comfortable platform heels for added height."}
+{"id": "K016", "name": "Kids' Romper Suit", "category": "sets", "gender": "infants", "style": "Cute", "price": 1200, "stock": 250, "details": "Soft cotton one-piece romper for infants."}
+{"id": "K017", "name": "Kids' Gown", "category": "dresses", "gender": "girls", "style": "Fairy Tale", "price": 3000, "stock": 90, "details": "Princess-style gown with tulle layers."}
+{"id": "K018", "name": "Kids' Sports Shorts", "category": "bottom_wear", "gender": "boys", "style": "Activewear", "price": 900, "stock": 400, "details": "Lightweight shorts for sports and activities."}
+{"id": "K019", "name": "Kids' Cap", "category": "accessories", "gender": "kids", "style": "Baseball", "price": 700, "stock": 550, "details": "Cartoon character themed baseball cap."}
+{"id": "K020", "name": "Kids' Sandals", "category": "footwear", "gender": "kids", "style": "Velcro", "price": 1300, "stock": 350, "details": "Easy to wear sandals with velcro straps."}
+{"id": "M031", "name": "Men's Silk Scarf", "category": "accessories", "gender": "men", "style": "Luxury", "price": 1800, "stock": 150, "details": "Printed silk scarf for a touch of elegance."}
+{"id": "M032", "name": "Men's Casual Blazer", "category": "outerwear", "gender": "men", "style": "Smart", "price": 5500, "stock": 95, "details": "Unstructured blazer for a smart casual look."}
+{"id": "W031", "name": "Women's Bodycon Dress", "category": "dresses", "gender": "women", "style": "Party", "price": 3900, "stock": 100, "details": "Figure-hugging dress for a night out."}
+{"id": "W032", "name": "Women's Leather Leggings", "category": "bottom_wear", "gender": "women", "style": "Edgy", "price": 2800, "stock": 140, "details": "Faux leather leggings for a bold statement."}
+{"id": "K021", "name": "Kids' Swimsuit", "category": "swimwear", "gender": "girls", "style": "One-piece", "price": 1400, "stock": 190, "details": "Colorful one-piece swimsuit with UV protection."}
+{"id": "K022", "name": "Kids' Swim Trunks", "category": "swimwear", "gender": "boys", "style": "Trunks", "price": 1100, "stock": 210, "details": "Quick-dry swim trunks with fun patterns."}
+{"id": "M033", "name": "Men's Tuxedo", "category": "formal_wear", "gender": "men", "style": "Black Tie", "price": 25000, "stock": 25, "details": "Complete tuxedo set for formal events."}
+{"id": "W033", "name": "Women's Evening Gown", "category": "formal_wear", "gender": "women", "style": "Elegant", "price": 22000, "stock": 20, "details": "Floor-length sequined evening gown."}
+{"id": "M034", "name": "Men's Cufflinks", "category": "accessories", "gender": "men", "style": "Formal", "price": 1600, "stock": 300, "details": "Silver-plated cufflinks for formal shirts."}
+{"id": "W034", "name": "Women's Bracelet", "category": "accessories", "gender": "women", "style": "Minimalist", "price": 2000, "stock": 250, "details": "Delicate chain bracelet with a single charm."}
+{"id": "K023", "name": "Kids' Onesie", "category": "nightwear", "gender": "kids", "style": "Animal", "price": 1900, "stock": 170, "details": "Plush animal-themed onesie for fun and warmth."}
+{"id": "K024", "name": "Kids' School Shoes", "category": "footwear", "gender": "kids", "style": "Formal", "price": 1800, "stock": 320, "details": "Durable black leather school shoes."}
+{"id": "M035", "name": "Men's Waistcoat", "category": "outerwear", "gender": "men", "style": "Layering", "price": 2900, "stock": 130, "details": "Textured waistcoat to wear over a formal shirt."}
+{"id": "W035", "name": "Women's High-Heel Boots", "category": "footwear", "gender": "women", "style": "Winter", "price": 5500, "stock": 90, "details": "Knee-high boots with a sturdy block heel."}
+{"id": "K025", "name": "Kids' Winter Jacket", "category": "outerwear","gender": "kids", "style": "Puffer", "price": 2500, "stock": 200, "details": "Insulated puffer jacket with a hood for warmth."}
+{"id": "M036001", "name": "Men's Casual Shirt 1", "category": "top_wear", "gender": "men", "style": "Casual", "price": 3152, "stock": 259, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036002", "name": "Men's Casual Shirt 2", "category": "top_wear", "gender": "men", "style": "Trendy", "price": 2902, "stock": 252, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036003", "name": "Men's Casual Shirt 3", "category": "top_wear", "gender": "men", "style": "Trendy", "price": 3668, "stock": 171, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036004", "name": "Men's Casual Shirt 4", "category": "top_wear", "gender": "men", "style": "Casual", "price": 3454, "stock": 245, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036005", "name": "Men's Casual Shirt 5", "category": "top_wear", "gender": "men", "style": "Smart", "price": 1858, "stock": 116, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036006", "name": "Men's Casual Shirt 6", "category": "top_wear", "gender": "men", "style": "Casual", "price": 2419, "stock": 111, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036007", "name": "Men's Casual Shirt 7", "category": "top_wear", "gender": "men", "style": "Trendy", "price": 3123, "stock": 117, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036008", "name": "Men's Casual Shirt 8", "category": "top_wear", "gender": "men", "style": "Trendy", "price": 2333, "stock": 257, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036009", "name": "Men's Casual Shirt 9", "category": "top_wear", "gender": "men", "style": "Trendy", "price": 3869, "stock": 186, "details": "Breathable cotton shirt for daily wear."}
+{"id": "M036010", "name": "Men's Casual Shirt 10", "category": "top_wear", "gender": "men", "style": "Smart", "price": 1541, "stock": 208, "details": "Breathable cotton shirt for daily wear."}
+{"id": "W036001", "name": "Women's Stylish Dress 1", "category": "dresses", "gender": "women", "style": "Elegant", "price": 4142, "stock": 89, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036002", "name": "Women's Stylish Dress 2", "category": "dresses", "gender": "women", "style": "Elegant", "price": 3587, "stock": 77, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036003", "name": "Women's Stylish Dress 3", "category": "dresses", "gender": "women", "style": "Elegant", "price": 2855, "stock": 176, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036004", "name": "Women's Stylish Dress 4", "category": "dresses", "gender": "women", "style": "Summer", "price": 3418, "stock": 104, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036005", "name": "Women's Stylish Dress 5", "category": "dresses", "gender": "women", "style": "Summer", "price": 2917, "stock": 66, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036006", "name": "Women's Stylish Dress 6", "category": "dresses", "gender": "women", "style": "Elegant", "price": 4826, "stock": 200, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036007", "name": "Women's Stylish Dress 7", "category": "dresses", "gender": "women", "style": "Summer", "price": 4572, "stock": 182, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036008", "name": "Women's Stylish Dress 8", "category": "dresses", "gender": "women", "style": "Party", "price": 5626, "stock": 134, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036009", "name": "Women's Stylish Dress 9", "category": "dresses", "gender": "women", "style": "Summer", "price": 2746, "stock": 128, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "W036010", "name": "Women's Stylish Dress 10", "category": "dresses", "gender": "women", "style": "Party", "price": 5258, "stock": 66, "details": "Stylish and comfortable dress for every occasion."}
+{"id": "K026001", "name": "Kids' Fun Accessory 1", "category": "accessories", "gender": "kids", "style": "Colorful", "price": 646, "stock": 157, "details": "Bright and fun accessory for kids."}
+{"id": "K026002", "name": "Kids' Fun Accessory 2", "category": "accessories", "gender": "kids", "style": "Colorful", "price": 844, "stock": 389, "details": "Bright and fun accessory for kids."}
+{"id": "K026003", "name": "Kids' Fun Accessory 3", "category": "accessories", "gender": "kids", "style": "Practical", "price": 679, "stock": 343, "details": "Bright and fun accessory for kids."}
+{"id": "K026004", "name": "Kids' Fun Accessory 4", "category": "accessories", "gender": "kids", "style": "Playful", "price": 865, "stock": 393, "details": "Bright and fun accessory for kids."}
+{"id": "K026005", "name": "Kids' Fun Accessory 5", "category": "accessories", "gender": "kids", "style": "Playful", "price": 604, "stock": 240, "details": "Bright and fun accessory for kids."}
+{"id": "K026006", "name": "Kids' Fun Accessory 6", "category": "accessories", "gender": "kids", "style": "Practical", "price": 1104, "stock": 164, "details": "Bright and fun accessory for kids."}
+{"id": "K026007", "name": "Kids' Fun Accessory 7", "category": "accessories", "gender": "kids", "style": "Colorful", "price": 955, "stock": 315, "details": "Bright and fun accessory for kids."}
+{"id": "K026008", "name": "Kids' Fun Accessory 8", "category": "accessories", "gender": "kids", "style": "Practical", "price": 1473, "stock": 202, "details": "Bright and fun accessory for kids."}
+{"id": "K026009", "name": "Kids' Fun Accessory 9", "category": "accessories", "gender": "kids", "style": "Playful", "price": 1293, "stock": 348, "details": "Bright and fun accessory for kids."}
+{"id": "K026010", "name": "Kids' Fun Accessory 10", "category": "accessories", "gender": "kids", "style": "Playful", "price": 1717, "stock": 254, "details": "Bright and fun accessory for kids."}
